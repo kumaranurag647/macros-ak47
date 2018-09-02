@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "824717902928",
+    "firebase_url": "https://macros-3305d.firebaseio.com",
+    "project_id": "macros-3305d",
+    "storage_bucket": "macros-3305d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824717902928:android:875826f41b75eba4",
+        "android_client_info": {
+          "package_name": "com.example.android.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824717902928-tfl4qg163do3b718lnjl9fod2aas01fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrW6sb4VhhuGuwSlJ9jVxP--JBI1W9tFg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
