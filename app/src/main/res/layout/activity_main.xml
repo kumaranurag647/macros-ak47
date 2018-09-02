@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/macros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="327dp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="8sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:background="#EEEEEE"
+        android:ems="10"
+        android:hint="Enter food item"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/speakButton"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/square"
+        android:fadingEdge="none|horizontal|vertical"
+        android:lineSpacingExtra="12sp"
+        android:src="@drawable/ripple"
+        android:onClick="speakButtonClicked"
+        android:textColor="#536DFE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/pn"
+        android:layout_width="68sp"
+        android:layout_height="37sp"
+        android:layout_marginEnd="48sp"
+        android:layout_marginTop="32sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="0 g"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speakButton" />
+
+    <TextView
+        android:id="@+id/carbs"
+        android:layout_width="68sp"
+        android:layout_height="38sp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="0 g"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/pn"
+        app:layout_constraintTop_toBottomOf="@+id/pn" />
+
+    <TextView
+        android:id="@+id/fats"
+        android:layout_width="68sp"
+        android:layout_height="38sp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="0 g"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/carbs"
+        app:layout_constraintTop_toBottomOf="@+id/carbs" />
+
+    <TextView
+        android:id="@+id/cals"
+        android:layout_width="90sp"
+        android:layout_height="38sp"
+        android:layout_marginBottom="8sp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="0 kcal"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="@+id/fats"
+        app:layout_constraintTop_toBottomOf="@+id/fats"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+
+        style="@android:style/Widget.Holo.Light.ImageButton"
+
+        android:background="@drawable/square"
+        android:fadingEdge="none|horizontal|vertical"
+        android:lineSpacingExtra="12sp"
+
+        android:onClick="speakButtonClicked"
+        android:id="@+id/imageButton"
+
+        android:layout_width="109sp"
+        android:layout_height="48sp"
+        android:layout_marginBottom="16sp"
+        android:layout_marginTop="8sp"
+        android:clickable="true"
+        android:textColor="#536DFE"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText1"
+        app:layout_constraintVertical_bias="0.946"
+        app:srcCompat="@drawable/square"
+        android:src="@drawable/ripple"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175sp"
+        android:layout_height="38sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="24sp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="Protein"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/pn"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="175sp"
+        android:layout_height="38sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="24sp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="Carbohydrates"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/carbs"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carbs" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="175sp"
+        android:layout_height="38sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="24sp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="Fats"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/fats"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fats" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="175sp"
+        android:layout_height="41sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginStart="24sp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="Calories"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cals"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cals" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="30sp"
+        android:layout_height="38sp"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=":"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/pn" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="30sp"
+        android:layout_height="38sp"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=":"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/carbs" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="30sp"
+        android:layout_height="38sp"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=":"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/fats" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="30sp"
+        android:layout_height="38sp"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=":"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/cals" />
+
+    <TextView
+        android:id="@+id/SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:text="SHOW"
+
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/tap_to_search"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="72dp"
+        android:text="Tap To Search"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+</android.support.constraint.ConstraintLayout>
